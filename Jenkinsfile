@@ -9,7 +9,7 @@ node {
                app = docker.build('caffeine2021/example-app')
        }
 
-       stage('Test') {
+       stage('Test JS') {
               app.inside {
                   sh 'npm test'
               }
